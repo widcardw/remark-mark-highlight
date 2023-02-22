@@ -52,7 +52,7 @@ exports[`remark > should parse markdown 1`] = `
               "offset": 2,
             },
           },
-          "type": "mark",
+          "type": "emphasis",
         },
       ],
       "position": {
