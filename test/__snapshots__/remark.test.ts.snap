@@ -1,87 +1,37 @@
 // Vitest Snapshot v1
 
-exports[`remark > should parse markdown 1`] = `
+exports[`remark > should generate ast 1`] = `
 {
   "children": [
     {
       "children": [
         {
-          "position": {
-            "end": {
-              "column": 3,
-              "line": 1,
-              "offset": 2,
-            },
-            "start": {
-              "column": 1,
-              "line": 1,
-              "offset": 0,
-            },
-          },
           "type": "text",
           "value": "a ",
         },
         {
-          "children": [
-            {
-              "position": {
-                "end": {
-                  "column": 6,
-                  "line": 1,
-                  "offset": 5,
-                },
-                "start": {
-                  "column": 5,
-                  "line": 1,
-                  "offset": 4,
-                },
+          "children": [],
+          "data": {
+            "hChildren": [
+              {
+                "type": "text",
+                "value": "b",
               },
-              "type": "text",
-              "value": "b",
-            },
-          ],
-          "position": {
-            "end": {
-              "column": 8,
-              "line": 1,
-              "offset": 7,
-            },
-            "start": {
-              "column": 3,
-              "line": 1,
-              "offset": 2,
+            ],
+            "hName": "span",
+            "hProperties": {
+              "className": [
+                "mark",
+              ],
             },
           },
+          "hName": "",
           "type": "emphasis",
         },
       ],
-      "position": {
-        "end": {
-          "column": 8,
-          "line": 1,
-          "offset": 7,
-        },
-        "start": {
-          "column": 1,
-          "line": 1,
-          "offset": 0,
-        },
-      },
       "type": "paragraph",
     },
   ],
-  "position": {
-    "end": {
-      "column": 8,
-      "line": 1,
-      "offset": 7,
-    },
-    "start": {
-      "column": 1,
-      "line": 1,
-      "offset": 0,
-    },
-  },
   "type": "root",
 }
 `;
