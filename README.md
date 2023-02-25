@@ -2,7 +2,7 @@
 
 > Thanks to [`remark-gfm`](https://github.com/remarkjs/remark-gfm)
 
-A plugin that can transform `==text==` into `<span class="mark">text</span>`.
+A plugin that can transform `==text==` into `<mark>text</mark>`.
 
 I prefer to use this plugin in [Astro](https://astro.build) to highlight the marked text.
 
@@ -31,7 +31,7 @@ export default defineConfig({
 Add css
 
 ```css
-.mark {
+mark {
   background-color: rgba(255, 255, 0, 0.5);
 }
 ```
