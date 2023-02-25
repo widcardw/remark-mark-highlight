@@ -37,4 +37,12 @@ describe('micromark', () => {
     }))
       .toMatchInlineSnapshot('"<p>a <mark>b</mark> <mark>c</mark> ~~d~~</p>"')
   })
+
+  it('should preserve token inside highlighted', () => {
+    expect(micromark('a ==**b**==', {
+      extensions: [defaults],
+      htmlExtensions: [markHtml]
+    }))
+      .toMatchInlineSnapshot('"<p>a <mark><strong>b</strong></mark></p>"')
+  })
 })

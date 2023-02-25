@@ -4,6 +4,7 @@ specifiers:
   '@types/mdast': ^3.0.10
   bumpp: ^8.2.1
   mdast-util-from-markdown: ^1.3.0
+  mdast-util-gfm-strikethrough: ^1.0.3
   mdast-util-to-markdown: ^1.5.0
   micromark: ^3.1.0
   micromark-util-chunked: ^1.0.0
@@ -26,6 +27,7 @@ devDependencies:
   '@types/mdast': 3.0.10
   bumpp: 8.2.1
   mdast-util-from-markdown: 1.3.0
+  mdast-util-gfm-strikethrough: 1.0.3
   mdast-util-to-markdown: 1.5.0
   micromark: 3.1.0
   micromark-util-chunked: 1.0.0
@@ -1195,6 +1197,13 @@ packages:
       uvu: 0.5.6
     transitivePeerDependencies:
       - supports-color
+    dev: true
+
+  /mdast-util-gfm-strikethrough/1.0.3:
+    resolution: {integrity: sha512-DAPhYzTYrRcXdMjUtUjKvW9z/FNAMTdU0ORyMcbmkwYNbKocDpdk+PX1L1dQgOID/+vVs1uBQ7ElrBQfZ0cuiQ==}
+    dependencies:
+      '@types/mdast': 3.0.10
+      mdast-util-to-markdown: 1.5.0
     dev: true
 
   /mdast-util-phrasing/3.0.1:

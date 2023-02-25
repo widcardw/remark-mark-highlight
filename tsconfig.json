@@ -2,7 +2,7 @@
   "include": [
     "lib/**/*.js",
     "test/**/*.js"
-  ],
+, "test/remark.test.ts", "test/remark.test.ts"  ],
   "compilerOptions": {
     "target": "ES2020",
     "lib": [
