@@ -3,12 +3,12 @@
   "version": "0.1.0",
   "description": "",
   "author": "widcardw <widcardw@foxmail.com>",
-  "homepage": "https://github.com/widcardw/markdown-it-asciimath#readme",
+  "homepage": "https://github.com/widcardw/remark-mark-highlight#readme",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/widcardw/markdown-it-asciimath.git"
+    "url": "git+https://github.com/widcardw/remark-mark-highlight.git"
   },
-  "bugs": "https://github.com/widcardw/markdown-it-asciimath/issues",
+  "bugs": "https://github.com/widcardw/remark-mark-highlight/issues",
   "main": "./dist/index.js",
   "type": "module",
   "scripts": {
