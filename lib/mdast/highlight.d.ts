@@ -1,4 +1,4 @@
-import type {Parent} from 'mdast'
+import type {Literal, Parent, PhrasingContent} from 'mdast'
 
 export {markFromMarkdown, markToMarkdown} from './lib.js'
 
@@ -25,7 +25,7 @@ declare module 'mdast-util-to-markdown' {
 
 // Add nodes to tree.
 declare module 'mdast' {
-  interface StaticPhrasingContentMap {
+  interface PhrasingContentMap {
     inlineMark: InlineMark
   }
 }
