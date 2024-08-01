@@ -1,6 +1,6 @@
 import { describe, it, expect } from 'vitest'
 import { micromark } from 'micromark'
-import { microMark as syntax } from '../lib/micromark/syntax'
+import { markHighlight as syntax } from '../lib/micromark/syntax'
 import { markHtml } from '../lib/micromark/html'
 
 describe('micromark', () => {

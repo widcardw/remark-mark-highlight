@@ -1,6 +1,6 @@
 import { unified } from 'unified'
 import { describe, it, expect } from 'vitest'
-import { remarkMark } from '../lib/mdast/remark'
+import { remarkMark } from '../lib/mdast/remark.js'
 import remarkParse from 'remark-parse'
 import remarkRehype from 'remark-rehype'
 import rehypeStringify from 'rehype-stringify'
@@ -11,14 +11,12 @@ const md1 = 'a ==*b*=='
 
 describe('remark', () => {
   it('should generate ast', () => {
-    expect(
-      removePosition(
-        unified()
-          .use(remarkParse)
-          .use(remarkMark as any)
-          .parse(md1),
-        true))
-      .toMatchInlineSnapshot(`
+    const tree = unified()
+      .use(remarkParse)
+      .use(remarkMark as any)
+      .parse(md1)
+    removePosition(tree, { force: true })
+    expect(tree).toMatchInlineSnapshot(`
         {
           "children": [
             {
